@@ -4,4 +4,4 @@
 -   React JS
 -   React Router V6
 -   MUI V5
--   Tailwind CSS V3a
+-   Tailwind CSS V3
