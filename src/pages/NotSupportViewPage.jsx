@@ -17,7 +17,7 @@ export default function NotSupportViewPage() {
 
                 <div className="w-full text-center">
                     <Link to={'/'}
-                        className="bg-gray-800 rounded-full px-3 py-2"
+                        className="bg-gray-700 rounded-full px-3 py-2 hover:bg-gray-800"
                     >
                         Back to Home page
                     </Link>

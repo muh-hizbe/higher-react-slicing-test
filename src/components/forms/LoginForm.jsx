@@ -72,9 +72,9 @@ export const LoginForm = () => {
                         </div>
                     </form>
 
-                    <div>
+                    <div className="hidden md:block">
                         <div className='text-gray-400 text-sm font-semibold text-center tracking-wide'>
-                            Create an account? <a href='https://flyhigher.id/register' className='text-teal-500'>Sign Up</a>
+                            Create an account? <Link to='/register' className='text-teal-500'>Sign Up</Link>
                         </div>
                     </div>
                 </div>
