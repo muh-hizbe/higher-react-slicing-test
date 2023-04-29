@@ -4,8 +4,8 @@ import { Menu } from "./Menu";
 
 export const MainLayout = ({ children }) => {
     return (
-        <div className={`h-screen w-full justify-center bg-[url('/image/bg.png')] bg-no-repeat bg-cover bg-center overflow-auto p-12`}>
-            <div className='flex flex-col items-center justify-center'>
+        <div className={`h-screen w-full justify-center bg-[url('/image/bg.png')] md:bg-none bg-no-repeat bg-cover bg-center overflow-auto p-12 md:p-0`}>
+            <div className='flex md:hidden flex-col items-center justify-center'>
                 <Image
                     src={HigherLogo}
                     className='!h-28 !w-28'
@@ -18,7 +18,7 @@ export const MainLayout = ({ children }) => {
                 </div>
             </div>
 
-            <div className="mt-6">
+            <div className="mt-6 flex md:hidden">
                 <Menu />
             </div>
             {children}

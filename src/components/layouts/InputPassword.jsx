@@ -26,7 +26,7 @@ export const InputPassword = (props) => {
                         onMouseDown={handleMouseDownPassword}
                         edge="end"
                     >
-                        {showPassword ? <VisibilityOff className="text-gray-800" /> : <Visibility className="text-gray-800" />}
+                        {showPassword ? <VisibilityOff className={props?.iconClassName} /> : <Visibility className={props?.iconClassName} />}
                     </IconButton>
                 </InputAdornment>
             }
