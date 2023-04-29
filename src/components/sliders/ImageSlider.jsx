@@ -22,13 +22,16 @@ export const ImageSlider = () => {
                     key={index}
                     src={image}
                     alt={`Image ${index}`}
-                    wrapperClassName={
-                        `${index === currentImageIndex ?
-                            '!opacity-100' :
-                            '!opacity-0 hidden'
-                        }
-                    transition-opacity duration-200 ease-in-out !object-cover absolute left-0 top-0`
-                    }
+                    wrapperStyle={{
+                        transition: 'opacity 2s ease-in-out',
+                        opacity: index === currentImageIndex ? 1 : 0,
+                        fitObjext: 'cover',
+                        position: 'absolute',
+                        width: "100%",
+                        height: "100%",
+                        left: 0,
+                        top: 0,
+                    }}
                 />
             ))}
         </div>
