@@ -18,11 +18,13 @@ export const RegisterForm = () => {
                     label={'password'}
                     placeholder={'Password'}
                     className={'!w-full'}
+                    iconClassName={'text-gray-800'}
                 />
                 <InputPassword
                     label={'password'}
                     placeholder={'Confirm Password'}
                     className={'!w-full'}
+                    iconClassName={'text-gray-800'}
                 />
 
                 <div className="w-full flex flex-col px-5 pt-5">
